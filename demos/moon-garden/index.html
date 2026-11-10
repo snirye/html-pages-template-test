@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A little postcard from a garden that only opens at night.">
+  <title>Moon Garden</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      min-height: 100svh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 1.5rem;
+      background: #0b1120;
+      color: #f7f2db;
+      font: 1rem/1.6 system-ui, sans-serif;
+    }
+
+    main {
+      width: min(100%, 38rem);
+      padding: clamp(1.5rem, 6vw, 4rem);
+      border: 1px solid #465570;
+      border-radius: 2rem;
+      background: linear-gradient(160deg, #243153, #18263d 60%, #153b38);
+      text-align: center;
+    }
+
+    .sky {
+      position: relative;
+      min-height: 10rem;
+      display: grid;
+      place-items: center;
+      color: #f9df94;
+    }
+
+    .moon {
+      width: 6.5rem;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: radial-gradient(circle at 32% 25%, #fffbe8, #f9df94 72%);
+      box-shadow: 0 0 2.5rem #ffe3a15c;
+    }
+
+    .star {
+      position: absolute;
+      font-size: 1.15rem;
+    }
+
+    .star-one { top: 12%; left: 22%; }
+    .star-two { top: 23%; right: 17%; }
+    .star-three { bottom: 16%; left: 15%; }
+
+    .eyebrow {
+      margin: 1rem 0 0.4rem;
+      color: #d8e3b9;
+      font-size: 0.75rem;
+      letter-spacing: 0.17em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font: clamp(2.5rem, 9vw, 4.5rem)/1 Georgia, serif;
+    }
+
+    .note {
+      max-width: 26ch;
+      margin: 1rem auto 0;
+      color: #e0eadb;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="sky" aria-hidden="true">
+      <span class="moon"></span>
+      <span class="star star-one">✧</span>
+      <span class="star star-two">✦</span>
+      <span class="star star-three">✧</span>
+    </div>
+    <p class="eyebrow">A postcard after dark</p>
+    <h1>Moon Garden</h1>
+    <p class="note">The moon is out. The mint is growing. The rest can wait until morning.</p>
+  </main>
+</body>
+</html>
